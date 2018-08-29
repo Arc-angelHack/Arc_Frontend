@@ -1,9 +1,7 @@
 {
-  "name": "Arc_Frontend",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Frontend using React Native and Expo",
+  "name": "empty-project-template",
   "main": "node_modules/expo/AppEntry.js",
+  "private": true,
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -20,16 +18,15 @@
   "dependencies": {
     "expo": "^29.0.0",
     "moment": "^2.22.2",
-    "react": "^16.4.2",
+    "native-base": "^2.8.0",
+    "react": "16.3.1",
     "react-moment": "^0.7.9",
-    "react-native": "^0.56.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-29.0.0.tar.gz",
     "react-native-navbar": "^2.1.0",
     "react-native-swipe-gestures": "^1.0.2",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0",
-    "react": "16.3.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-29.0.0.tar.gz"
+    "redux-thunk": "^2.3.0"
   }
 }

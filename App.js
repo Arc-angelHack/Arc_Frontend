@@ -14,7 +14,7 @@ export default class App extends React.Component {
 const styles = {
   viewStyle : {
     flex: 1,
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
   },
 }
