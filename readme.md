@@ -1,4 +1,4 @@
-## Arc Frontent
+## Arc Frontend
 
 This is the front end for our mobile application. This is a mobile application built for disaster relief. 
 
