@@ -5,7 +5,9 @@ This is the front end for our mobile application. This is a mobile application b
 ## Built With
 * React Native
 * Redux
-* React 
+* React
+* Expo
+* Native Base
 * Moment.js 
 * PostgreSQL
 
