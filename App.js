@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View, Platform } from 'react-native';
-import { Header, Title } from 'native-base'; 
+import { Header, Left, Icon, Body, Title, Right, Button, Footer, FooterTab, Content } from 'native-base'; 
 
 export default class App extends React.Component {
 
@@ -32,13 +32,88 @@ export default class App extends React.Component {
 
     render() {
         return (
-            <View style={styles.container}>
+
+
+            <View style = {styles.container}>
+
+
+{/* //////////////////////////////////////////////
+
+    ///////////////////  HEADER   /////////////////
+
+     ///////////////////////////////////////////// */}
+
                 <Header>
-                    <Title>OneArc</Title>
+                    <Left>
+                        <Button transparent>
+                            <Icon name='menu' />
+                        </Button>
+                    </Left>
+
+                    <Body>
+                        <Title>OneArc</Title>
+                    </Body>
+                    
+                    <Right />
                 </Header>
-                <Text style = {styles.viewStyle}>
-                    This is placeholder text. I NEED TO FIX THIS. Not sure what's wrong.
-                </Text>
+
+{/* //////////////////////////////////////////////
+
+    ///////////////////  CONTENT   /////////////////
+
+     ///////////////////////////////////////////// */}
+
+                <View style = {styles.viewStyle}>
+                    <Text style = {styles.textStyle}>
+                        Currently Working text which is placeholder! Testing.
+                    </Text>
+                </View>
+
+                <Content />
+
+{/* //////////////////////////////////////////////
+
+    ///////////////////  FOOTER   /////////////////
+
+     ///////////////////////////////////////////// */}
+
+                <Footer>
+                    <FooterTab>
+
+                        <Button 
+                        full primary>
+                            <Text 
+                            style = {styles.buttonTextStyle}>
+                                Map
+                            </Text>
+                        </Button>
+
+                        <Button 
+                        full primary>
+                            <Text 
+                            style = {styles.buttonTextStyle}>
+                                Board
+                            </Text>
+                        </Button>
+
+                        <Button 
+                        full primary>
+                            <Text 
+                            style = {styles.buttonTextStyle}>
+                                Resource
+                            </Text>
+                        </Button>
+
+                        <Button 
+                        full primary>
+                            <Text 
+                            style = {styles.buttonTextStyle}>
+                                Request
+                            </Text>
+                        </Button>
+
+                    </FooterTab>
+                </Footer>
             </View>
         );
     }
@@ -53,11 +128,19 @@ export default class App extends React.Component {
 const styles = {
   container : {
     flex: 1,
-    marginTop: Platform.OS === 'android' ? 24 : 0
+    backgroundColor: 'red',
+    marginTop: Platform.OS === 'android' ? 24 : 0,
   },
   viewStyle: {
-    flex: 1,
+    backgroundColor: '#a3ddff',
     justifyContent: 'center',
     alignItems: 'center',
   },
+  textStyle: {
+    color: 'blue',
+    textAlign: 'center',
+  },
+  buttonTextStyle: {
+    color: 'white',
+  }
 }
