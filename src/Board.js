@@ -26,7 +26,11 @@ export default class App extends React.Component {
     }
 
     switchActiveButton = () => {
-        
+
+    }
+
+    renderContent = () => {
+
     }
 
     //////////////////////////////////////////////
@@ -86,7 +90,8 @@ export default class App extends React.Component {
                     <FooterTab>
 
                         <Button 
-                        full primary>
+                        full primary
+                        onPress = {this.switchScreen}>
                             <Text 
                             style = {styles.buttonTextStyle}>
                                 Map
